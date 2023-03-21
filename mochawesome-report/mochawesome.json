@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-15T03:48:16.991Z",
+    "end": "2023-03-15T03:48:18.309Z",
+    "duration": 1318,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "898bdeba-0d20-4463-9c3f-42e70d5dfcfe",
+      "title": "",
+      "fullFile": "D:\\belajar\\Api-test\\live-apiTest\\test\\api\\chaiAssert.js",
+      "file": "\\test\\api\\chaiAssert.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a19c5faf-030b-4c96-8cd8-1593582ae7fe",
+          "title": "Post Request Example",
+          "fullFile": "D:\\belajar\\Api-test\\live-apiTest\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "Post Request Example response status equal to 200",
+              "timedOut": false,
+              "duration": 1280,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// check response status harus sama dengan 200\nexpect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "67a06f27-8df6-4534-995d-55b17314f77a",
+              "parentUUID": "a19c5faf-030b-4c96-8cd8-1593582ae7fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to haveOWnProperty",
+              "fullTitle": "Post Request Example response body to haveOWnProperty",
+              "timedOut": false,
+              "duration": 3,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Expect dalam body response terdapat value 'message'\nexpect((await response).body).to.haveOwnProperty('message')",
+              "err": {},
+              "uuid": "5e6fad26-bb49-42f0-a73e-2e5c1cf9e0d8",
+              "parentUUID": "a19c5faf-030b-4c96-8cd8-1593582ae7fe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "67a06f27-8df6-4534-995d-55b17314f77a",
+            "5e6fad26-bb49-42f0-a73e-2e5c1cf9e0d8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1283,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
